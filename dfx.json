@@ -1,0 +1,23 @@
+{
+  "canisters": {
+    "learnchain_backend": {
+      "type": "rust",
+      "package": "learnchain_backend",
+      "candid": "src/learnchain_backend/learnchain_backend.did"
+    },
+    "learnchain_frontend": {
+      "type": "assets",
+      "source": [
+        "src/learnchain_frontend/dist/"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

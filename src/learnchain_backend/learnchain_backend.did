@@ -1,0 +1,19 @@
+type UserId = text;
+
+type QAPair = record {
+  question : text;
+  answer : text;
+  timestamp : nat64;
+};
+
+type UserStats = record {
+  total_questions : nat64;
+  total_answers : nat64;
+};
+
+service : {
+  save_qa : (text, text) -> (variant { Ok : text; Err : text });
+  get_user_qa : () -> (vec QAPair) query;
+  get_user_stats : () -> (UserStats) query;
+  greet : (text) -> (text) query;
+}

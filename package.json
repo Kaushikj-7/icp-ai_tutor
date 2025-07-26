@@ -1,0 +1,28 @@
+{
+  "name": "icp-ai_tutor",
+  "private": true,
+  "version": "0.0.0",
+  "description": "LearnChain - A decentralized AI tutoring platform built on the Internet Computer Protocol",
+  "scripts": {
+    "build": "dfx build",
+    "start": "dfx start --background",
+    "deploy": "dfx deploy",
+    "generate": "dfx generate"
+  },
+  "keywords": [
+    "Internet Computer",
+    "ICP",
+    "AI",
+    "Education",
+    "Blockchain",
+    "Tutoring"
+  ],
+  "author": "Kaushik",
+  "license": "MIT",
+  "devDependencies": {
+    "@dfinity/agent": "^0.19.2",
+    "@dfinity/auth-client": "^0.19.2",
+    "@dfinity/candid": "^0.19.2",
+    "@dfinity/principal": "^0.19.2"
+  }
+}
