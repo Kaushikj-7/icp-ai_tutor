@@ -13,10 +13,9 @@ const ProtectedRoute = ({ children }) => {
     );
   }
 
-  // Temporarily disabled for demo purposes
-  // if (!isAuthenticated) {
-  //   return <Navigate to="/login" replace />;
-  // }
+  if (!isAuthenticated) {
+    return <Navigate to="/login" replace />;
+  }
 
   return children;
 };

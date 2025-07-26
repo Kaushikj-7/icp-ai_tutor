@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useAuth } from '../context/AuthContext';
-import aiService from '../services/mockAiService';
+import aiService from '../services/aiService';
 
 const Ask = () => {
   const { actor } = useAuth();
